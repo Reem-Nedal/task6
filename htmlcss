@@ -1,0 +1,81 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+html{margin-top:100px;margin-left:100px;margin-right:100px;margin-bottom:100 px;
+background-color: white;color:white;font-family:arial;
+
+}
+a:hover{background-color:rgb(255, 253, 253);color:black;}
+a{color: white;
+font-size: 17px;
+}
+
+a:link
+{
+text-decoration: none;
+}
+button{height:50px;margin:2px;width:91px;}
+
+.flexcontainer{
+
+  display: flex;
+  flex-direction:row;
+  width: 900px;
+height:350px
+
+}
+.flexcontainer>div{
+
+width:450px;
+height:350px;
+ 
+
+}
+#classone{ display:flex;flex-direction:row ; flex-wrap: wrap; justify-content: center;
+    margin-top:10px;margin-left: 40px;margin-right: 40px; align-content:center; }
+.circle{
+width:75px;
+height:75px;
+border-radius: 50%;
+margin-left: 10px;
+
+}
+
+.space{width:100% ;}
+  
+    </style>
+    </head>
+    </head>
+    <body>
+        <center>
+<div class="flexcontainer" style="border:solid 0.5px black;">
+    <div style="background-color:rgb(8 , 27 , 61);box-shadow:2px 2px 20px 2px darkblue;" > 
+    <br><br><br><br><br>
+    <h1>GUESS THE COLOR!</h1>
+    <h1 id="number"> RGB ( 186 ,7 , 105)</h1><br>
+    <button id="firstbutton" style="background-color:rgb(8, 27, 61) ;border-radius: 10px;border:ridge 0.6px white;"><a href="https://www.google.com/">
+        New color</a></button>
+    <button style="background-color:rgb(8, 27, 61) ;border-radius: 10px;border:ridge 0.6px white;" ><a href="https://www.google.com/"> 
+         Easy</a></button>
+    <button style="background-color:rgb(8, 27, 61) ;border-radius: 10px;border:ridge 0.6px white;"><a href="https://www.google.com/"> 
+        Hard</a></button>
+    </div>
+<br><br>
+    <div  id="classone"  > 
+	
+<div  class="circle" style="background-color:rgb(42, 146, 187);"></div>
+<div class="circle" style="background-color:rgb(105, 173, 40);"></div>
+<div class="circle" style="background-color:rgb(240, 240, 97);"></div>  
+<div class="space">....</div>
+<div class="circle" style="background-color:rgb(173, 42, 114);"></div>
+<div class="circle" style="background-color:rgb(13, 197, 32);"></div>
+<div class="circle" style="background-color:rgb(43, 34, 4);"></div>
+ </div>
+</center>
+<br>
+<h1 style="text-align:right;font-size:50px;color:black;" id="result" >The Result</h1>
+<script src="javascript.js"></script>
+        </body>
+</html>
